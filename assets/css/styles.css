@@ -42,6 +42,28 @@ a {
     color: #FFFFFF;
 }
 
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Dấu ba chấm */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2
+}
+
+/* Vẫn xuống được dòng khi các chữ không có khoảng trắng */
+.break-all {
+    word-break: break-all;
+}
+
 .heading {
     font-weight: 700;
     color: #0D1111;
@@ -55,6 +77,10 @@ a {
 .heading.lv2 {
     font-size: 4.2rem;
     line-height: 1.33;
+}
+
+.heading.lv3 {
+    font-size: 2.2rem;
 }
 
 /* =======================Header======================= */
@@ -296,21 +322,19 @@ a {
 .hero .students .avatar span {
     font-weight: 500;
     font-size: 1.0rem;
-    line-height: 15px;
     color: #FFFFFF;
 }
 
 
 /* =======================Features======================= */
 .features .body {
-    margin: 78px 146px 78px 0;
+    margin: 78px 146px 26px 0;
     padding: 52px 0;
 }
 
 .features .body .label {
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 18px;
     color: #767E7E;
 }
 
@@ -322,7 +346,7 @@ a {
 .features .body .desc {
     width: 590px;
     font-size: 1.8rem;
-    line-height: 27px;
+    line-height: 1.68;
     color: #767E7E;
 }
 
@@ -347,7 +371,6 @@ a {
     margin-top: 26px;
     font-weight: 600;
     font-size: 2.0rem;
-    line-height: 30px;
     color: #0D1111;
 }
 
@@ -361,4 +384,119 @@ a {
 
 .features .item .desc:first-child {
     width: 168px;
+}
+
+/* =======================Popular courses======================= */
+.popular-courses {
+    padding: 52px 0;
+}
+
+.popular-courses .label {
+    font-weight: 700;
+    font-size: 12px;
+    color: #767E7E;
+}
+
+.popular-courses .heading {
+    margin-top: 18px;
+}
+
+.popular-courses .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-courses .row .desc {
+    margin-top: 18px;
+    width: 525px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767E7E;
+}
+
+.popular-courses .row .view-all {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    color: #1EBFC1;
+}
+
+.course-list {
+    display: flex;
+    margin-top: 79px;
+    gap: 47px;
+}
+
+.course-list .item {
+    width: 33.33%;
+    position: relative;
+
+}
+
+.course-list .item .thumb {
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    background: #D0EFED;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.course-list .item .content {
+    padding: 18px 82px 29px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    position: absolute;
+    bottom: -124px;
+    left: 17px;
+    right: 17px;
+}
+
+.course-list .item .content .title a {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0D1111;
+}
+
+.course-list .content .fee {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    color: #767E7E;
+}
+
+.course-list .content .fee b {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0D1111
+}
+
+.course-list .content .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    color: #9DA6A5;
+}
+
+.course-list .info {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.course-list .info .count {
+    font-size: 1.4rem;
+    color: #9DA6A5;
+    display: inline-flex;
+    align-items: center;
+}
+
+.course-list .info .count::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
 }
