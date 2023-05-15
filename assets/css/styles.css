@@ -6,10 +6,15 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary-color: #1EBFC1;
+}
+
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }
+
 
 /* =======================Common======================= */
 .main-content {
@@ -37,11 +42,32 @@ a {
     color: #FFFFFF;
 }
 
+.heading {
+    font-weight: 700;
+    color: #0D1111;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
 /* =======================Header======================= */
+
+.header {
+    background: #fff;
+}
 
 .header.fixed {
     position: sticky;
     top: -44px;
+    z-index: 1;
+
 }
 
 .header .body {
@@ -88,4 +114,187 @@ a {
     text-align: center;
     color: #1EBFC1;
     margin-left: 24px;
+}
+
+/* =======================Hero======================= */
+.hero {
+    padding: 42px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+    align-items: center;
+}
+
+/* =======================Hero left======================= */
+.hero .content-block {
+    width: 39%;
+
+}
+
+.hero .content-block .introduce {
+    font-size: 1.4rem;
+    color: #767E7E;
+}
+
+.hero .content-block .heading {
+    margin-top: 18px;
+    width: 458px;
+}
+
+.hero .content-block .desc {
+    width: 374px;
+    margin-top: 46px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9DA6A5;
+
+}
+
+.hero .content-block .cta-group {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .cta-group .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+/* =======================Hero right======================= */
+
+.hero .media-block {
+    margin-left: 71px;
+    width: 61%;
+    position: relative;
+
+}
+
+.hero .media-block .img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.hero .media-block .hero-courses {
+    background: #FEFEFD;
+    display: flex;
+    align-items: center;
+    padding: 18px 25px;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    position: absolute;
+    top: 149px;
+    left: 0;
+    width: 157px;
+    margin-left: 25px;
+}
+
+.hero .hero-courses .label {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 1.0rem;
+    line-height: 15px;
+    color: #0D1111;
+}
+
+.hero .hero-schedules {
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 46px;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+    padding: 16px 25px 23px;
+}
+
+.hero .hero-schedules .title {
+    font-weight: 500;
+    font-size: 1.0rem;
+    line-height: 15px;
+    text-align: center;
+    color: #0D1111;
+}
+
+.hero .hero-schedules .radio li {
+    width: 74px;
+    height: 6px;
+    background: #EDF1F5;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.hero .hero-schedules .radio li:last-child {
+    margin-top: 16px;
+    width: 26px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.hero .hero-schedules .radio li:first-child {
+    margin-top: 16px;
+}
+
+.hero .hero-schedules .radio-in {
+    width: calc(var(--custom-width, 10));
+    background: #FB9899;
+    border-radius: 3px;
+    height: 100%;
+}
+
+.hero .students {
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+    padding: 17px 35px;
+    border-radius: 24px;
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+}
+
+.hero .students .title {
+    font-weight: 500;
+    font-size: 1.0rem;
+    line-height: 15px;
+    color: #0D1111;
+}
+
+.hero .students .avatar-block {
+    margin-top: 8px;
+    margin-left: 8px;
+    display: flex;
+}
+
+.hero .students .avatar {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -8px;
+}
+
+.hero .students .avatar:last-child {
+    background: #1EBFC1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .students .avatar span {
+    font-weight: 500;
+    font-size: 1.0rem;
+    line-height: 15px;
+    color: #FFFFFF;
 }
