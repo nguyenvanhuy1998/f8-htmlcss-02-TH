@@ -530,7 +530,7 @@ a {
 
 }
 
-/* =======================Stats======================= */
+/* =======================Feedback======================= */
 .feedback {
     padding: 52px 0;
     margin-top: 160px;
@@ -649,4 +649,30 @@ a {
 .feedback .info .avatar:last-child {
     top: 107px;
     right: 171px;
+}
+
+/* =======================Admit======================= */
+.admit {
+    margin-top: 78px;
+    padding: 76px 0px 88px;
+    background: #DEF6F5;
+}
+
+.admit .body {
+    margin-right: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admit .content .title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    color: #070707;
+}
+
+.admit .content .desc {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    color: #767E7E;
 }
