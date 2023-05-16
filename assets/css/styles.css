@@ -676,3 +676,54 @@ a {
     font-size: 1.8rem;
     color: #767E7E;
 }
+
+/* =======================Footer======================= */
+.footer {
+    margin-top: 79px;
+    padding: 52px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .column .title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #2E2E2E;
+}
+
+
+
+.footer .list li a {
+    display: block;
+    margin-top: 18px;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.footer .socials li {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.footer .socials li a {
+    margin-left: 13px;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.footer .copy-right {
+    margin-top: 80px;
+
+}
+
+.footer .copy-right p {
+    font-size: 18px;
+    text-align: center;
+    color: #B0B5B4;
+}
